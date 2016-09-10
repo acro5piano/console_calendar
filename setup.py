@@ -3,7 +3,7 @@ import os
 from setuptools import setup, find_packages
 
 version = imp.load_source(
-    'version', os.path.join('caravel', 'version.py'))
+    'version', os.path.join('console_calendar', 'version.py'))
 
 setup(
     name='console_calendar',
