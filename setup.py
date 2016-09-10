@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    scripts=['console_calendar/bin/console_calendar'],
+    scripts=['console_calendar/bin/cc'],
     install_requires=[
         'parsedatetime==2.0.0',
         'python-dateutil==2.5.3',
@@ -21,11 +21,12 @@ setup(
     #     'cors': ['Flask-Cors>=2.0.0'],
     # },
     tests_require=[
+        'ipython',
         'pytest',
     ],
     author='Kazuya Gosho',
     author_email='ketsume0211@gmail.com',
-    url='',
+    url='https://github.com/acro5piano/console_calendar',
     # download_url=(
     #     'https://github.com/airbnb/caravel/tarball/' + version.VERSION_STRING),
     classifiers=[
