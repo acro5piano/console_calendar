@@ -14,8 +14,7 @@ setup(
     zip_safe=False,
     scripts=['console_calendar/bin/cc'],
     install_requires=[
-        'parsedatetime==2.0.0',
-        'python-dateutil==2.5.3',
+        'termcolor',
     ],
     # extras_require={
     #     'cors': ['Flask-Cors>=2.0.0'],

@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+
+import argparse
+from datetime import datetime
+
+from console_calendar.main import ConsoleCalendar
+
+def get_opts():
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('-y', '--year',
+                        dest='year', action='store', nargs='?',
+                        default=datetime.today().year, type=int,
+                        help='Year')
+    parser.add_argument('-m', '--month',
+                        dest='month', action='store', nargs='?',
+                        default=datetime.today().month, type=int,
+                        help='month')
+    args = parser.parse_args()
+    return args
+
+def main():
+    calendar = ConsoleCalendar(get_opts().year, get_opts().month)
+    calendar.print_on_console()
+
+if __name__ == '__main__':
+    main()
